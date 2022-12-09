@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dsd</title>
+</head>
+<style>
+	.main{
+		width: 700px;
+		height: 500px;
+		background: red;
+	}
+	#pers{
+		position: relative;
+		top: 290px;
+		width: 200px;
+		height: 200px;
+		background: blue;
+	}
+	.button{
+		width: 100px;
+		height: 100px;
+		background: green;
+		position: relative;
+		top: 10px;
+		left: 200px;
+		border-radius: 20px;
+	}
+	img{
+		width: 200px;
+		height: 200px;
+	}
+</style>
+<script>
+	function right(){
+		let containerElement = document.querySelector('#pers');
+    	containerElement.style.left = '500px';
+	}
+	function left(){
+		let containerElement = document.querySelector('#pers');
+    	containerElement.style.left = '0px';
+	}
+	function center(){
+		let containerElement = document.querySelector('#pers');
+    	containerElement.style.left = '250px';
+	}
+</script>
+<body>
+	<div class='main'>
+		<div id='pers'><img src="938-9385766_cat.png"></div>
+	</div>
+	<input class='button'type="button" value="Влево" onclick="left()">
+	<input class='button'type="button" value="Центер" onclick="center()">
+	<input class='button'type="button" value="Вправо" onclick="right()">
+</body>
+</html>
