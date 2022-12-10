@@ -42,6 +42,15 @@
 		position: absolute;
 		top: 350px;
 		left: -100px;
+  		z-index:  100;
+	}
+	#kosta{
+		width: 500px;
+		height: 500px;
+		position: absolute;
+		top: 130px;
+		left: 380px;
+  		z-index:  200;
 	}
 </style>
 <script>
@@ -69,6 +78,7 @@
 		  case 1:
 		  	containerBaltika.style.left = '50px';
 		  	if(containerElement.style.left == '0px' && random == 1){
+		  		alert( 'Нашел балтику!' );
 		  		countt = countt + 1;
 		  		document.getElementById("count").innerHTML = 'Выпито балтики: '+countt;
 		  		random = getRandomInt(1,3);
@@ -77,6 +87,7 @@
 		  case 2:
 		  	containerBaltika.style.left = '300px';
 		    if(containerElement.style.left == '250px'&& random == 2){
+		  		alert( 'Нашел 2 балтики!' );
 		  		countt = countt + 2;
 		  		document.getElementById("count").innerHTML = 'Выпито балтики: '+countt;
 		  		random = getRandomInt(1,3);
@@ -85,6 +96,7 @@
 		  case 3:
 		  	containerBaltika.style.left = '550px';
 		    if(containerElement.style.left == '500px' && random == 3){
+		  		alert( 'Нашел 3 балтики!!!!!' );
 		  		countt = countt + 3;
 		  		document.getElementById("count").innerHTML = 'Выпито балтики: '+countt;
 		  		random = getRandomInt(1,3);
@@ -102,6 +114,7 @@
 	<div class='main'>
 		<img id="fon" src="1620321122_27-phonoteka_org-p-fon-s-musornimi-bakami-30.jpg">
 		<img id='baltika' src="4822.jpg">
+		<img id='kosta' src="photo_2022-12-09_22-26-27-opR5QZMs9-transformed.png">
 		<div id='pers'><img src="photo_2022-12-10_01-39-40-transformed.png"></div>
 	</div>
 	<input class='button'type="button" value="Влево" onclick="left()">
